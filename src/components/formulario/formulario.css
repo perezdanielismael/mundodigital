@@ -1,0 +1,48 @@
+.contenedor-formulario{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1D3F58;
+    font-family: 'Montserrat', sans-serif;
+}
+.formulario{
+    width: 40%;
+}
+.enviar{
+    margin: 3vh auto 3vh auto;
+    height: 40px;
+}
+.titulo-form{
+    font-size: 40px;
+}
+.subtitulo-form{
+    margin-bottom: 5vh;
+}
+.label{
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+@media screen and (max-width:425px){
+    .contenedor-formulario{
+        height: 700px;
+        background-color: white;
+    }
+    .titulo-form{
+        font-size: 33px;
+        text-align: center;
+    }
+    .subtitulo-form{
+        text-align: center;
+        margin-top: 2vh;
+    }
+    .formulario{
+        width: 80%;
+    }
+    .enviar{
+        margin-top: 5vh;
+        width: 50%;
+    }
+}

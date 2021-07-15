@@ -1,0 +1,88 @@
+.contenedor-general{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1D3F58;
+    font-family: 'Montserrat', sans-serif;
+}
+.titulo-servicios{
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+.texto-titulo{
+    font-size: 40px;
+    font-weight: 400;
+}
+#servicios{
+    background-image: url('../../assets/blue.jpg');
+}
+
+.contenedor-servicios{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.bloque{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 30%;
+}
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.img-servicio{
+    width: 50%;
+    height: 100%;
+    transition: all .4s ease;
+}
+.img-servicio:hover{
+    transform: rotate(20deg);
+}
+.texto-servicio{
+    text-align: center;
+    margin-top: 2vh;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+@media screen and (max-width:425px) {
+    .contenedor-general{
+        height: 150vh;
+    }
+    .titulo-servicios{
+        width: 100%;
+    }
+    .texto-titulo{
+       font-size: 30px;
+       width: 95%;
+       text-align: center;
+       margin-top: 3vh;
+       margin-bottom: 4vh;
+   }
+   .bloque{
+       width: 70%;
+   }
+   .img-servicio{
+       width: 40%;
+   }
+    .contenedor-servicios{
+        height: 120vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: space-around;
+    }
+}

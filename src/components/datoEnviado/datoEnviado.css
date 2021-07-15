@@ -1,0 +1,49 @@
+.seccionEnviado{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+ 
+}
+.texto-enviado{
+    width: 80%;
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 40px;
+    color: #1D3F58;
+}
+.sub-texto{
+    color: #1D3F58;
+}
+.volver{
+    margin-top: 2vh;
+    width: 190px;
+}
+.check{
+    width: 200px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-check-circle{
+   font-size: 150px;
+   display: flex;
+   justify-content: center;
+   color: rgb(25, 231, 25);
+}
+@media screen and (max-width:360px){
+    .seccionEnviado{
+        height: 100vh;
+    }
+    .sub-texto{
+       text-align: center;
+       margin-top: 3vh;
+    }
+    .volver{
+        height: 50px;
+        margin-left: 0;
+    }
+}

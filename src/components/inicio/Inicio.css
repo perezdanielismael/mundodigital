@@ -1,0 +1,159 @@
+.parallax{
+    background: #fff fixed no-repeat 100% 100%;
+    background-size: cover;
+}
+.contenedor{
+    width: 100%;
+    height: 590px;
+    display: flex;
+}
+#inicio{
+    background-image: url('../../assets/fondo.png');
+}
+.section-left{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.contenedor-inicio{
+    width: 80%;
+    margin: auto auto 0 auto;
+    display: flex;
+}
+.titulo{
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 55px;
+}
+.texto-intro{
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    
+}
+.botones{
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+}
+.solicitar{
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #EE4223;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+.solicitar:hover{
+    text-decoration: none;
+    background-color: #ee4123dc;
+    color: white;
+}
+.promocion{
+    margin-left: 20px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color: #1D3F58;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+   
+}
+.promocion:hover{
+    background-color: #ffffffbb;
+    color: #1D3F58;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+.section-right{
+    width: 50%;
+}
+.img-persona{
+    width: 550px;
+}
+@media screen and (max-width:1024px) {
+    .img-persona{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .img-persona{
+        width: 350px;
+    }
+    .contenedor{
+     height: 60vh;
+    }
+    .contenedor-inicio{
+        width: 90%;
+        margin: 10vh auto auto auto;
+    }
+    .titulo{
+        width: 100%;
+        font-size: 38px;
+    }
+    .texto-intro{
+        font-size: 15px;
+    }
+    .solicitar{
+        font-size: 16px;
+        height: 40px;
+    }
+    .promocion{
+          font-size: 16px;
+          height: 40px;
+    }
+}
+@media screen and (max-width:425px){
+    .img-persona{
+        display: none;
+    }
+    .contenedor{
+        height: 90vh;
+        width: 100%;
+    }
+    .contenedor-inicio{
+        width: 100%;
+        height: 60%;
+    }
+    .section-left{
+        width: 100%;
+    }
+    .titulo{
+        width: 80%;
+        margin: 0 auto 3vh 5%;
+    }
+    .texto-intro{
+        width: 80%;
+        margin: 0 auto 0 5%;
+    }
+    .botones{
+        width: 100%;
+    }
+    .solicitar{
+        width: 35%;
+        margin-left: 5%;
+    }
+    .promocion{
+        width: 42%;
+    }
+    .section-right{
+        display: none;
+    }
+}

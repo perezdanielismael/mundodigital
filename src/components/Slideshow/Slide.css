@@ -1,0 +1,127 @@
+.item-carousel{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(247, 244, 244);
+    z-index: 1;
+    color:#1D3F58;
+}
+.imagen{
+    width: 50%;
+    height: 80vh;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.promocion-slider{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+}
+.titulo-promo{
+    font-weight: 600;
+    width: 70%;
+    font-size: 40px;
+    margin: 5vh auto 5vh 10%;
+}
+.detalle-promo{
+    width: 80%;
+    margin: 0 auto 3vh auto;
+}
+.parrafo-promo{
+    margin-bottom: 2vh;
+}
+.fa-check{
+    color: rgb(15, 240, 15);
+}
+.precio{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 3vh;
+}
+.condicion{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0;
+
+}
+.btn-promo{
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.solicitar:hover{
+    background-color: #ee4123dc;
+}
+@media screen and (max-width:1024px) {
+    .titulo-promo{
+        font-size: 38px;
+    }
+    .precio{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:768px){
+    .titulo-promo{
+        width: 95%;
+        font-size: 33px;
+    }
+    .imagen{
+        height: 80vh;
+    }
+    .promocion-slider{
+        height: 80vh;
+    }
+}
+@media screen and (max-width:425px){
+    .item-carousel{
+        height: 118vh;
+        flex-direction: column;
+    }
+    .btn-promo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .imagen{
+        width: 100%;
+        height: 52vh;
+        z-index: -1;
+    }
+    .promocion-slider{
+        width: 90%;
+        height: 55vh;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 65%;
+    }
+    .titulo-promo{
+        font-weight: 500;
+        width: 90%;
+        font-size: 30px;
+        margin: 19vh auto 3vh 0;
+    }
+    .detalle-promo{
+        width: 100%;
+        align-self: center;
+        margin-left: auto;
+    }
+    .parrafo-promo{
+        width: 95%;
+        font-size: 20px;
+    }
+    .precio{
+        font-size: 33px;
+        margin-top: 2vh;
+    }
+    .solicitar-item{
+        margin-left: 0;
+    }
+}
